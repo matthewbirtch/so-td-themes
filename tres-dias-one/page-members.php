@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Register
+ * Template Name: Members
  * Description: A Page Template with a darker design.
  */
 ?>
