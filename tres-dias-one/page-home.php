@@ -40,10 +40,6 @@
 	<ul class='login-nav'>
 	  <?php if ( is_user_logged_in()) { ?>
 	    <li>
-	    	<?php 
-	    		$current_user = wp_get_current_user();
-    			echo $current_user->user_firstname . ' ' . $current_user->user_lastname;
-				?>
 	      <a class='login-dropdown-button' href='<?php echo wp_logout_url(); ?>'>
 	        Log Out
 	      </a>
