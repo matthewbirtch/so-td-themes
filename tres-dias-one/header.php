@@ -71,7 +71,7 @@
           </a>
         </li>
         <li>
-          <a class='nav-members' href='/members'>
+          <a class='nav-members' href='<?php echo site_url(); ?>/members'>
             Members Area
           </a>
         </li>
