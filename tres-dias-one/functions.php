@@ -74,4 +74,17 @@
         die();
     }
 
+    add_filter( 'wpmem_register_heading', 'my_heading' );
+ 
+    function my_heading( $heading ){
+        /**
+         * The original heading comes in with7
+         * the optional $heading parameter.
+         * You can filter it or change it.9
+         */
+        $heading = 'Complete this form to register.';
+        return $heading;
+    }
+
+
 ?>

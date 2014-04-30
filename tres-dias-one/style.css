@@ -71,20 +71,79 @@ a {
   color: #0090db;
   text-decoration: none; }
 
-form ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5); }
-form input {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  border: solid 1px #dcdcdc;
-  background: none;
-  padding: 4px;
-  margin-bottom: 5px;
-  font-size: 18px;
-  font-weight: 300; }
-form .button {
-  margin-top: 6px;
-  cursor: pointer; }
+.wpmem_msg {
+  color: red; }
+
+form {
+  text-align: left; }
+  form ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5); }
+  form input {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    border: solid 1px #dcdcdc;
+    background: none;
+    padding: 4px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 300; }
+    form input:focus {
+      border: solid 1px #0090db;
+      color: #0090db;
+      outline: none; }
+  form .button, form .button_div input {
+    margin-top: 6px;
+    cursor: pointer; }
+  form legend {
+    text-align: center;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.5); }
+  form label {
+    float: left;
+    width: 30%;
+    font-size: 14px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px; }
+  form .div_text, form .div_select {
+    float: right;
+    width: 70%;
+    margin-bottom: 10px; }
+    form .div_text input, form .div_select input {
+      width: 100%; }
+  form .button_div {
+    margin-top: 24px;
+    float: left;
+    width: 100%; }
+    form .button_div input {
+      width: 50%; }
+  form .req-text {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    display: none; }
+  form select {
+    -webkit-appearance: none;
+    background: none;
+    border: solid 1px white;
+    border-radius: 0;
+    font-size: 18px;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    padding: 4px;
+    margin: 0;
+    padding-right: 25px;
+    background: url(images/login-arrow.png) no-repeat 97% center; }
+    form select:focus {
+      border: solid 1px #0090db;
+      color: #0090db;
+      outline: none; }
+  form input[type="reset"] {
+    display: none; }
+  form input.username {
+    width: 70%; }
+  form input#first_name, form input#last_name {
+    width: 50%; }
 
 #nav-bar {
   width: 100%;
@@ -224,24 +283,24 @@ ul.big-nav li {
       .about-nav li a:hover {
         color: rgba(255, 255, 255, 0.4); }
 
-.button {
+.button, form .button_div input {
   font-size: 14px;
-  border: solid 1px #ffffff;
+  border: solid 1px #0090db;
   padding: 6px 12px;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: #0090db;
   text-align: center; }
-  .button:hover {
+  .button:hover, form .button_div input:hover {
     border-color: #0090db;
     background: #0090db;
     color: white; }
 
-.welcome {
+.content-container {
   margin: auto;
   text-align: center;
   width: 50%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.86);
   padding: 5%; }
 
 .menu-btn {
@@ -326,9 +385,16 @@ ul.big-nav li {
     padding: 5%;
     width: 33%;
     margin: auto; }
-    #login-overlay .overlay-content-container .form-container input, #login-overlay .overlay-content-container .form-container .button {
+    #login-overlay .overlay-content-container .form-container label {
+      float: none;
+      padding: 4px 0;
+      color: rgba(255, 255, 255, 0.5); }
+    #login-overlay .overlay-content-container .form-container input, #login-overlay .overlay-content-container .form-container .button, #login-overlay .overlay-content-container .form-container form .button_div input, form .button_div #login-overlay .overlay-content-container .form-container input {
       width: 100%; }
-    #login-overlay .overlay-content-container .form-container .button:hover {
+      #login-overlay .overlay-content-container .form-container input:focus, #login-overlay .overlay-content-container .form-container .button:focus, #login-overlay .overlay-content-container .form-container form .button_div input:focus, form .button_div #login-overlay .overlay-content-container .form-container input:focus {
+        border-color: white;
+        color: white; }
+    #login-overlay .overlay-content-container .form-container .button:hover, #login-overlay .overlay-content-container .form-container form .button_div input:hover, form .button_div #login-overlay .overlay-content-container .form-container input:hover {
       background-color: white;
       color: #0090db; }
 
@@ -342,16 +408,16 @@ ul.big-nav li {
   .login-overlay .overlay-content-container .form-container {
     width: 90%; }
 
-  .welcome {
+  .content-container {
     width: 100%;
     padding: 8%; }
-    .welcome h1 {
+    .content-container h1 {
       font-size: 48px; } }
 @media all and (max-width: 768px) and (min-width: 481px) {
   #login-overlay .overlay-content-container .form-container {
     width: 50%; }
 
-  .welcome {
+  .content-container {
     width: 80%; } }
 @media all and (max-width: 768px) {
   #logo {

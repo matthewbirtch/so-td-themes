@@ -91,6 +91,9 @@ a {
 	text-decoration: none;
 }
 
+.wpmem_msg {
+		color: red;
+	}
 form {
 	::-webkit-input-placeholder {
   	  color: transparentize($main-font-color, .5);
@@ -104,10 +107,81 @@ form {
 		margin-bottom: 5px;
 		font-size: $main-font-size;
 		font-weight: $main-font-weight;
+		&:focus{
+			border: solid 1px $electric-blue;
+			color: $electric-blue;
+			outline: none;
+		}
 	}
 	.button {
 		margin-top: 6px;
 		cursor: pointer;
+	}
+	legend {
+		text-align: center;
+		margin-bottom: 24px;
+		color: transparentize($main-font-color,.5);
+	}
+	text-align: left;
+	label { 
+		float:left;
+		width:30%;
+		font-size:14px;
+		text-align: left;
+		padding: 10px;
+		margin-bottom:10px;
+	}
+	.div_text, .div_select {
+		float:right;
+		width: 70%;
+		margin-bottom:10px;	
+		input {
+			width: 100%;
+		}
+	}
+	.button_div {
+		margin-top: 24px;
+		float:left;
+		width: 100%;
+		input {
+			width: 50%;
+			@extend .button;
+		}
+	}
+	.req-text {
+		font-size: 12px;
+		color: transparentize($main-font-color,.5);
+		display:none;
+	}
+	select {
+		-webkit-appearance: none;
+		background: none;
+		border: solid 1px $main-font-color;
+		border-radius: 0;
+		font-size: 18px;
+		color: $main-font-color;
+		font-family: $main-font-family;
+		font-weight: $main-font-weight;
+		padding: 4px;
+		margin:0;
+		padding-right: 25px;
+		background: url(images/login-arrow.png) no-repeat 97% center;
+		&:focus{
+			border: solid 1px $electric-blue;
+			color: $electric-blue;
+			outline: none;
+		}
+	}
+	
+	input[type="reset"]{
+		display:none;
+	}
+
+	input.username {
+		width: 70%;
+	}
+	input#first_name, input#last_name {
+		width: 50%;
 	}
 }
 
@@ -297,11 +371,11 @@ ul.big-nav {
 
 .button {
 	font-size: 14px;
-	border: solid 1px #ffffff;
+	border: solid 1px $electric-blue;
 	padding: 6px 12px;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: $main-font-color;
+	color: $electric-blue;
 	text-align: center;
 	&:hover {
 		border-color: $electric-blue;
@@ -310,11 +384,11 @@ ul.big-nav {
 	}
 }
 
-.welcome {
+.content-container {
 	margin: auto;
 	text-align: center;
 	width:50%;
-	background: transparentize(#000000, .3);
+	background: transparentize(#000000, .14);
 	padding: 5%;
 }
 
@@ -410,8 +484,17 @@ ul.big-nav {
 			padding: 5%;
 			width: 33%;
 			margin: auto;
+			label {
+				float: none;
+				padding: 4px 0;
+				color: transparentize($main-font-color, .5)
+			}
 			input, .button {
 				width: 100%;
+				&:focus{
+					border-color: $main-font-color;
+					color: $main-font-color;
+				}
 			}
 			.button {
 				&:hover{
@@ -422,6 +505,7 @@ ul.big-nav {
 		}
 	}
 }
+
 
 // Media Queries
 //less than 480px
@@ -440,7 +524,7 @@ ul.big-nav {
 			}
 		}
 	}
-	.welcome {
+	.content-container {
 		width:100%;
 		padding: 8%;
 		h1 {
@@ -459,7 +543,7 @@ ul.big-nav {
 			}
 		}
 	}
-	.welcome {
+	.content-container {
 		width:80%;
 	}
 }
