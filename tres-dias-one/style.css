@@ -214,6 +214,8 @@ ul.nav {
     width: 100%;
     position: relative;
     left: 20px; }
+    .menu-members-nav-container ul li.current-menu-item a {
+      color: white; }
 
 .admin-bar .menu-members-nav-container {
   top: 86px; }

@@ -271,7 +271,12 @@ ul.nav{
 		position: relative;
 		left: 20px;
 		li {
-			@extend .nav-list-item
+			@extend .nav-list-item;
+			&.current-menu-item {
+				a {
+					color:$main-font-color;
+				}
+			}
 		}
 	}
 }
