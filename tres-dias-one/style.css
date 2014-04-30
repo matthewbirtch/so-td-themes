@@ -163,18 +163,18 @@ form {
   font-size: 14px;
   height: 54px; }
 
-.nav-button, .nav-list-item a, ul.nav li a, ul.login-nav li a, ul.big-nav li a {
+.nav-button, .nav-list-item a, ul.nav li a, #members-sidebar .menu ul li a, ul.login-nav li a, ul.big-nav li a {
   padding: 0 20px;
   height: 100%;
   display: table-cell;
   vertical-align: middle;
   color: rgba(255, 255, 255, 0.6);
   font-weight: bold; }
-  .nav-button:hover, .nav-list-item a:hover, ul.nav li a:hover, ul.login-nav li a:hover, ul.big-nav li a:hover {
+  .nav-button:hover, .nav-list-item a:hover, ul.nav li a:hover, #members-sidebar .menu ul li a:hover, ul.login-nav li a:hover, ul.big-nav li a:hover {
     color: white;
     background-color: rgba(0, 144, 219, 0.9); }
 
-.nav-list-item, ul.nav li, ul.login-nav li, ul.big-nav li {
+.nav-list-item, ul.nav li, #members-sidebar .menu ul li, ul.login-nav li, ul.big-nav li {
   border-left: solid 1px rgba(255, 255, 255, 0.15);
   height: 100%;
   float: left;
@@ -183,17 +183,17 @@ form {
   -webkit-transition: border-bottom .3s ease-in-out;
   -moz-transition: border-bottom .3s ease-in-out;
   -ms-transition: border-bottom .3s ease-in-out; }
-  .nav-list-item:last-child, ul.nav li:last-child, ul.login-nav li:last-child, ul.big-nav li:last-child {
+  .nav-list-item:last-child, ul.nav li:last-child, #members-sidebar .menu ul li:last-child, ul.login-nav li:last-child, ul.big-nav li:last-child {
     border-right: solid 1px rgba(255, 255, 255, 0.15); }
-  .nav-list-item.selected, ul.nav li.selected, ul.login-nav li.selected, ul.big-nav li.selected {
+  .nav-list-item.selected, ul.nav li.selected, #members-sidebar .menu ul li.selected, ul.login-nav li.selected, ul.big-nav li.selected {
     border-bottom: solid 4px #0090db;
     font-weight: bold; }
-    .nav-list-item.selected a, ul.nav li.selected a, ul.login-nav li.selected a, ul.big-nav li.selected a {
+    .nav-list-item.selected a, ul.nav li.selected a, #members-sidebar .menu ul li.selected a, ul.login-nav li.selected a, ul.big-nav li.selected a {
       color: #0090db; }
-      .nav-list-item.selected a:hover, ul.nav li.selected a:hover, ul.login-nav li.selected a:hover, ul.big-nav li.selected a:hover {
+      .nav-list-item.selected a:hover, ul.nav li.selected a:hover, #members-sidebar .menu ul li.selected a:hover, ul.login-nav li.selected a:hover, ul.big-nav li.selected a:hover {
         color: white; }
 
-ul.nav {
+ul.nav, #members-sidebar .menu ul {
   height: 100%;
   margin: auto;
   width: 536px;
