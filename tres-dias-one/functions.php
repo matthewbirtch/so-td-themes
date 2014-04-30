@@ -74,6 +74,13 @@
         die();
     }
 
+    //Initialize Menu Support
+    function register_my_menu() {
+      register_nav_menu('memers-nav',__( 'Members Nav' ));
+    }
+    add_action( 'init', 'register_my_menu' );
+
+
     add_filter( 'wpmem_register_heading', 'my_heading' );
  
     function my_heading( $heading ){
