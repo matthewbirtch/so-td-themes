@@ -451,6 +451,18 @@ ul.big-nav {
 		}
 		text-align: center;
 	}
+	&.blog {
+		h2 {
+			margin-bottom: .2em;
+		}
+		.meta {
+			font-size: 14px;
+			margin-bottom: 2.5em;
+		}
+		.postmetadata {
+			font-size: 14px;
+		}
+	}
 }
 
 .menu-btn {

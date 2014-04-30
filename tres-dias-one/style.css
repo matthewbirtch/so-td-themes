@@ -345,6 +345,13 @@ ul.big-nav li {
     text-align: center; }
     .content-container.welcome h1 {
       margin-bottom: .5em; }
+  .content-container.blog h2 {
+    margin-bottom: .2em; }
+  .content-container.blog .meta {
+    font-size: 14px;
+    margin-bottom: 2.5em; }
+  .content-container.blog .postmetadata {
+    font-size: 14px; }
 
 .menu-btn {
   display: none; }
