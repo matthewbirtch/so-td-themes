@@ -215,6 +215,9 @@ ul.nav {
     position: relative;
     left: 20px; }
 
+.admin-bar .menu-members-nav-container {
+  top: 86px; }
+
 ul.login-nav {
   height: 100%;
   position: absolute;
