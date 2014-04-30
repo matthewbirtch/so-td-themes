@@ -355,6 +355,10 @@ ul.big-nav li {
   .content-container.blog .postmetadata {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6); }
+  .content-container.blog #comments, .content-container.blog #respond {
+    margin: 28px 0;
+    padding: 28px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); }
 
 .menu-btn {
   display: none; }

@@ -465,6 +465,11 @@ ul.big-nav {
 			font-size: 14px;
 			color: transparentize($main-font-color,.4);
 		}
+		#comments, #respond {
+			margin: 28px 0;
+			padding: 28px 0;
+			border-top: 1px solid transparentize($main-font-color,.7);
+		}
 	}
 }
 
