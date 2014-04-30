@@ -660,6 +660,22 @@ ul.big-nav {
 	}
 }
 
+//less than 782px
+@media all and (max-width: 782px){
+	.admin-bar {
+		#nav-bar {
+			top: 46px;
+		}
+		.overlay {
+			top: 46px;
+		}
+		.menu-members-nav-container {
+			top: 100px;
+		}
+	}
+
+}
+
 //less than 1025px
 @media all and (max-width: 1024px){
 	.html-mobile-background {

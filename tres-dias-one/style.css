@@ -500,6 +500,13 @@ ul.big-nav li {
 
   ul.nav {
     display: none; } }
+@media all and (max-width: 782px) {
+  .admin-bar #nav-bar {
+    top: 46px; }
+  .admin-bar .overlay {
+    top: 46px; }
+  .admin-bar .menu-members-nav-container {
+    top: 100px; } }
 @media all and (max-width: 1024px) {
   .html-mobile-background {
     background-image: url(images/forest-med.jpg); } }
