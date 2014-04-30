@@ -305,7 +305,8 @@ ul.big-nav li {
   .button:hover, form .button_div input:hover {
     border-color: #0090db;
     background: #0090db;
-    color: white; }
+    color: white;
+    text-decoration: none; }
 
 .content-container {
   margin: auto;

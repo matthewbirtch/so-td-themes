@@ -36,6 +36,11 @@
         Statement of Faith
       </a>
     </li>
+    <li class="selected">
+      <a class='nav-members' href='<?php echo site_url(); ?>/members'>
+        Members
+      </a>
+    </li>
   </ul>
   <ul class='login-nav'>
     <?php if ( is_user_logged_in()) { ?>
