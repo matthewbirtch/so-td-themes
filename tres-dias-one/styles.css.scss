@@ -446,6 +446,9 @@ ul.big-nav {
 		}
 	}
 	&.welcome {
+		h1 {
+			margin-bottom: .5em;
+		}
 		text-align: center;
 	}
 }

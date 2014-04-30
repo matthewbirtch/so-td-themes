@@ -343,6 +343,8 @@ ul.big-nav li {
     list-style-type: none; }
   .content-container.welcome {
     text-align: center; }
+    .content-container.welcome h1 {
+      margin-bottom: .5em; }
 
 .menu-btn {
   display: none; }
