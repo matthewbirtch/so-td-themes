@@ -335,6 +335,10 @@ ul.big-nav li {
     color: white;
     text-decoration: none; }
 
+#page-about .button, #page-about form .button_div input, form .button_div #page-about input {
+  color: white;
+  border: solid 1px white; }
+
 .content-container {
   margin: auto;
   width: 50%;
@@ -342,9 +346,6 @@ ul.big-nav li {
   padding: 5%; }
   .content-container h1 {
     text-align: center; }
-  .content-container.about .button, .content-container.about form .button_div input, form .button_div .content-container.about input {
-    color: white;
-    border: solid 1px white; }
   .content-container.profile ul {
     list-style-type: none; }
   .content-container.welcome {
