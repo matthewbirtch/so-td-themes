@@ -27,7 +27,7 @@ $(document).ready(function(){
   });
 
   //big-nav - for mobile
-  $('.big-nav a').click(function(event){
+  $(".big-nav a[rel='page']").click(function(event){
     event.preventDefault();
     closeOverlay('#menu-overlay');
   });
