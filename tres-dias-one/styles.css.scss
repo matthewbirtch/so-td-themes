@@ -443,6 +443,12 @@ ul.big-nav {
 	width:50%;
 	background: transparentize(#000000, .14);
 	padding: 5%;
+	&.about {
+		.button {
+			color:$main-font-color;
+			border:solid 1px $main-font-color;
+		}
+	}
 	&.profile {
 		ul{
 			list-style-type: none;
