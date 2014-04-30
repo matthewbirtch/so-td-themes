@@ -264,17 +264,14 @@ ul.nav{
 	font-size: 12px;
 	font-weight: 300;
 	height: 28px;
-	.menu {
-		height: 28px;
-		ul {
-			height: 100%;
-			margin: auto;
-			width: 100%;
-			position: relative;
-			left: 20px;
-			li {
-				@extend .nav-list-item
-			}
+	ul {
+		height: 100%;
+		margin: auto;
+		width: 100%;
+		position: relative;
+		left: 20px;
+		li {
+			@extend .nav-list-item
 		}
 	}
 }
