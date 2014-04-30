@@ -9,9 +9,6 @@ body.overlay-on {
   overflow-y: scroll;
   width: 100%; }
 
-body.admin-bar {
-  margin-top: 86px; }
-
 body, html {
   height: 100%;
   padding: 0;
@@ -19,7 +16,6 @@ body, html {
 
 body {
   margin: 0;
-  margin-top: 54px;
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
