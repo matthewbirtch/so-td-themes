@@ -16,7 +16,7 @@
     <i class='icon-menu'></i>
   </a>
   <ul class='nav'>
-    <li class='selected'>
+    <li>
       <a class='nav-home' href='<?php echo site_url(); ?>'>
         Home
       </a>
