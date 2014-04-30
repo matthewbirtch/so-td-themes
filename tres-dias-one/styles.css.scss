@@ -564,7 +564,7 @@ ul.big-nav {
 		left: 60px;
 	}
 
-	.menu {
+	.mobile-menu {
 		z-index:998;
 		display:block;
 		position: absolute;
@@ -598,7 +598,7 @@ ul.big-nav {
 
 //greater than 769px
 @media all and (min-width: 769px){
-	.menu {
+	.mobile-menu {
 		display:none;
 	}
 }

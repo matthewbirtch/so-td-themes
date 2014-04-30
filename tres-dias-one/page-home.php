@@ -12,7 +12,7 @@
 	    Southern Ontario Tres Dias
 	  </a>
 	</div>
-	<a class='menu' href='menu' rel='overlay'>
+	<a class='mobile-menu' href='menu' rel='overlay'>
 	  <i class='icon-menu'></i>
 	</a>
 	<ul class='nav'>

@@ -430,7 +430,7 @@ ul.big-nav li {
   #logo {
     left: 60px; }
 
-  .menu {
+  .mobile-menu {
     z-index: 998;
     display: block;
     position: absolute;
@@ -441,7 +441,7 @@ ul.big-nav li {
     padding: 5px 6px 5px 4px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 18px; }
-    .menu i {
+    .mobile-menu i {
       text-align: center; }
 
   #nav-bar {
@@ -454,5 +454,5 @@ ul.big-nav li {
   .html-mobile-background {
     background-image: url(images/forest-med.jpg); } }
 @media all and (min-width: 769px) {
-  .menu {
+  .mobile-menu {
     display: none; } }
