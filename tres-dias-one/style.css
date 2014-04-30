@@ -302,6 +302,8 @@ ul.big-nav li {
   width: 50%;
   background: rgba(0, 0, 0, 0.86);
   padding: 5%; }
+  .content-container.profile ul {
+    list-style-type: none; }
 
 .menu-btn {
   display: none; }

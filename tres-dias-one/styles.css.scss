@@ -390,6 +390,11 @@ ul.big-nav {
 	width:50%;
 	background: transparentize(#000000, .14);
 	padding: 5%;
+	&.profile {
+		ul{
+			list-style-type: none;
+		}
+	}
 }
 
 .menu-btn {
