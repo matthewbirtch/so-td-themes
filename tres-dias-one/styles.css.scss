@@ -616,8 +616,8 @@ ul.big-nav {
 
 }
 
-//less than 768px, greater than 480px
-@media all and (max-width: 768px) and (min-width: 481px){
+//less than 936px, greater than 480px
+@media all and (max-width: 936px) and (min-width: 481px){
 	#login-overlay {
 		.overlay-content-container {
 			.form-container {
@@ -629,8 +629,8 @@ ul.big-nav {
 		width:80%;
 	}
 }
-//less than 768px
-@media all and (max-width: 768px){
+//less than 936px
+@media all and (max-width: 936px){
 	#logo {
 		left: 60px;
 	}
@@ -667,8 +667,8 @@ ul.big-nav {
 	}
 }
 
-//greater than 769px
-@media all and (min-width: 769px){
+//greater than 937px
+@media all and (min-width: 937px){
 	.mobile-menu {
 		display:none;
 	}

@@ -470,13 +470,13 @@ ul.big-nav li {
     padding: 8%; }
     .content-container h1 {
       font-size: 48px; } }
-@media all and (max-width: 768px) and (min-width: 481px) {
+@media all and (max-width: 936px) and (min-width: 481px) {
   #login-overlay .overlay-content-container .form-container {
     width: 50%; }
 
   .content-container {
     width: 80%; } }
-@media all and (max-width: 768px) {
+@media all and (max-width: 936px) {
   #logo {
     left: 60px; }
 
@@ -503,6 +503,6 @@ ul.big-nav li {
 @media all and (max-width: 1024px) {
   .html-mobile-background {
     background-image: url(images/forest-med.jpg); } }
-@media all and (min-width: 769px) {
+@media all and (min-width: 937px) {
   .mobile-menu {
     display: none; } }
