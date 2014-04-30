@@ -40,7 +40,9 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 	<?php wp_head(); ?>
-	<script src='<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-2.7.1.min.js'></script>
+	<script type="text/javascript" src="//use.typekit.net/dbv3sjv.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src='<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-2.7.1.min.js'></script>
 </head>
 <body <?php body_class(); ?>>
 	<div class="html-mobile-background"></div>
