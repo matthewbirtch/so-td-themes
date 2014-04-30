@@ -458,9 +458,12 @@ ul.big-nav {
 		.meta {
 			font-size: 14px;
 			margin-bottom: 2.5em;
+			text-align: center;
+			color: transparentize($main-font-color,.4);
 		}
 		.postmetadata {
 			font-size: 14px;
+			color: transparentize($main-font-color,.4);
 		}
 	}
 }
