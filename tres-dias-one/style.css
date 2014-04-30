@@ -303,10 +303,11 @@ ul.big-nav li {
 
 .content-container {
   margin: auto;
-  text-align: center;
   width: 50%;
   background: rgba(0, 0, 0, 0.86);
   padding: 5%; }
+  .content-container h1 {
+    text-align: center; }
   .content-container.profile ul {
     list-style-type: none; }
 

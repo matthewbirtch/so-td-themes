@@ -392,7 +392,9 @@ ul.big-nav {
 
 .content-container {
 	margin: auto;
-	text-align: center;
+	h1 {
+		text-align: center;	
+	}
 	width:50%;
 	background: transparentize(#000000, .14);
 	padding: 5%;
@@ -517,6 +519,9 @@ ul.big-nav {
 	}
 }
 
+#members-sidebar {
+
+}
 
 // Media Queries
 //less than 480px
