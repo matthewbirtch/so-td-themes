@@ -44,7 +44,8 @@ h1 {
   color: #0090db;
   font-weight: 100;
   margin-bottom: 1em;
-  margin-top: 0; }
+  margin-top: 0;
+  letter-spacing: -.07em; }
 
 h2 {
   font-size: 48px;
@@ -52,7 +53,8 @@ h2 {
   font-weight: 100;
   margin-bottom: .9em;
   margin-top: 0;
-  line-height: 0.9; }
+  line-height: .9;
+  letter-spacing: -.04em; }
 
 h3 {
   font-size: 24px;
