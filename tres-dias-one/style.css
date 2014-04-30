@@ -204,11 +204,12 @@ ul.nav {
   width: 100%;
   background: #0090db;
   position: fixed;
-  font-size: 14px;
+  top: 54px;
+  font-size: 12px;
   font-weight: 300;
-  height: 32px; }
+  height: 28px; }
   #members-sidebar .menu {
-    height: 32px; }
+    height: 28px; }
     #members-sidebar .menu ul {
       height: 100%;
       margin: auto;

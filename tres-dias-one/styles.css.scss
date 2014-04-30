@@ -260,11 +260,12 @@ ul.nav{
 	width:100%;
 	background: $electric-blue;
 	position: fixed;
-	font-size: 14px;
+	top: 54px;
+	font-size: 12px;
 	font-weight: 300;
-	height: 32px;
+	height: 28px;
 	.menu {
-		height: 32px;
+		height: 28px;
 		ul {
 			height: 100%;
 			margin: auto;
