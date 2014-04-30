@@ -70,6 +70,11 @@
             Statement of Faith
           </a>
         </li>
+        <li>
+          <a class='nav-members' href='/members'>
+            Members Area
+          </a>
+        </li>
       </ul>
     </div>
   </div>
