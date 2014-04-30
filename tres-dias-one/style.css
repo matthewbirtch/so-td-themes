@@ -193,12 +193,28 @@ form {
       .nav-list-item.selected a:hover, ul.nav li.selected a:hover, #members-sidebar .menu ul li.selected a:hover, ul.login-nav li.selected a:hover, ul.big-nav li.selected a:hover {
         color: white; }
 
-ul.nav, #members-sidebar .menu ul {
+ul.nav {
   height: 100%;
   margin: auto;
   width: 536px;
   position: relative;
   left: 20px; }
+
+#members-sidebar {
+  width: 100%;
+  background: #0090db;
+  position: fixed;
+  font-size: 14px;
+  font-weight: 300;
+  height: 32px; }
+  #members-sidebar .menu {
+    height: 32px; }
+    #members-sidebar .menu ul {
+      height: 100%;
+      margin: auto;
+      width: 100%;
+      position: relative;
+      left: 20px; }
 
 ul.login-nav {
   height: 100%;

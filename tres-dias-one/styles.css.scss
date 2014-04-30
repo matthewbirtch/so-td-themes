@@ -245,7 +245,7 @@ form {
 	}
 }
 
-ul.nav, #members-sidebar .menu ul {
+ul.nav{
 	height: 100%;
 	margin: auto;
 	width: 536px;
@@ -253,6 +253,28 @@ ul.nav, #members-sidebar .menu ul {
 	left: 20px;
 	li {
 		@extend .nav-list-item
+	}
+}
+
+#members-sidebar {
+	width:100%;
+	background: $electric-blue;
+	position: fixed;
+	font-size: 14px;
+	font-weight: 300;
+	height: 32px;
+	.menu {
+		height: 32px;
+		ul {
+			height: 100%;
+			margin: auto;
+			width: 100%;
+			position: relative;
+			left: 20px;
+			li {
+				@extend .nav-list-item
+			}
+		}
 	}
 }
 
@@ -527,9 +549,7 @@ ul.big-nav {
 	}
 }
 
-#members-sidebar {
 
-}
 
 // Media Queries
 //less than 480px
