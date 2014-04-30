@@ -204,6 +204,11 @@ form {
 	position: fixed;
 	font-size: 14px;
 	height: 54px;
+	top:0;
+}
+
+.admin-bar #nav-bar {
+	top: 32px;
 }
 
 .nav-button {

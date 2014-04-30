@@ -161,7 +161,11 @@ form {
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
   font-size: 14px;
-  height: 54px; }
+  height: 54px;
+  top: 0; }
+
+.admin-bar #nav-bar {
+  top: 32px; }
 
 .nav-button, .nav-list-item a, ul.nav li a, .menu-members-nav-container ul li a, ul.login-nav li a, ul.big-nav li a {
   padding: 0 20px;
