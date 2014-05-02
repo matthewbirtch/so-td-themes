@@ -93,16 +93,28 @@ form {
   form ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5); }
 
-input {
+input, select {
   font-family: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
   color: white;
-  border: solid 1px #dcdcdc;
+  border: solid 1px rgba(255, 255, 255, 0.7);
+  border-radius: 0;
   background: none;
   padding: 4px;
-  margin-bottom: 5px;
-  font-size: 18px;
-  font-weight: 300; }
-  input:focus {
+  margin-bottom: 5px; }
+  input:focus, select:focus {
+    border: solid 1px #0090db;
+    color: #0090db;
+    outline: none; }
+
+select {
+  -webkit-appearance: none;
+  padding-right: 25px;
+  position: relative;
+  left: -3%;
+  background: url(images/login-arrow.png) no-repeat 97% center; }
+  select:focus {
     border: solid 1px #0090db;
     color: #0090db;
     outline: none; }
@@ -112,17 +124,27 @@ input {
   cursor: pointer; }
 
 legend {
-  text-align: center;
-  margin-bottom: 24px;
-  color: rgba(255, 255, 255, 0.5); }
+  display: none; }
+
+fieldset {
+  width: 85%;
+  margin: auto; }
+
+.div_text, label {
+  height: 32px;
+  display: block;
+  line-height: 32px;
+  vertical-align: middle;
+  margin-right: 2%;
+  margin-bottom: 10px; }
+  .div_text p, label p {
+    margin-bottom: 0; }
 
 label {
   float: left;
-  width: 30%;
+  width: 26%;
   font-size: 14px;
-  text-align: left;
-  padding: 10px;
-  margin-bottom: 10px; }
+  text-align: right; }
 
 .div_text, .div_select {
   float: right;
@@ -133,6 +155,7 @@ label {
 
 .button_div {
   margin-top: 24px;
+  text-align: center;
   float: left;
   width: 100%; }
   .button_div input {
@@ -142,24 +165,6 @@ label {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
   display: none; }
-
-select {
-  -webkit-appearance: none;
-  background: none;
-  border: solid 1px white;
-  border-radius: 0;
-  font-size: 18px;
-  color: white;
-  font-family: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  padding: 4px;
-  margin: 0;
-  padding-right: 25px;
-  background: url(images/login-arrow.png) no-repeat 97% center; }
-  select:focus {
-    border: solid 1px #0090db;
-    color: #0090db;
-    outline: none; }
 
 input[type="reset"] {
   display: none; }
@@ -534,7 +539,32 @@ ul.login-nav {
     width: 100%;
     padding: 8%; }
     .content-container h1, .page-template-page-members-php .content-container h1, .page-template-page-weekends-php .content-container h1, .blog .content-container h1, .single .content-container h1 {
-      font-size: 48px; } }
+      font-size: 48px; }
+
+  fieldset {
+    width: 100%; }
+
+  label {
+    float: none; }
+
+  .div_text, .div_select {
+    float: none;
+    width: 100%; }
+
+  input#first_name, input#last_name {
+    width: 100%; }
+
+  label {
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    height: auto;
+    line-height: 1.2;
+    margin-bottom: 2px; }
+
+  select {
+    left: 0; } }
 @media all and (max-width: 936px) and (min-width: 481px) {
   #login-overlay .overlay-content-container .form-container {
     width: 50%; }

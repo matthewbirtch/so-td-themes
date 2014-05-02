@@ -150,7 +150,7 @@
       global $current_user;
       get_currentuserinfo();
     ?> 
-      <li><a href="#"><?php echo 'Welcome, ' . $current_user->display_name;?></a>
+      <li><a href="#"><?php echo $current_user->display_name;?></a>
         <ul class="login-dropdown">
           <li>
             <a class='login-dropdown-button' href='<?php echo site_url(); ?>/profile'>
