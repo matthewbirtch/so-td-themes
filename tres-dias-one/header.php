@@ -119,7 +119,7 @@
     <i class='icon-menu'></i>
   </a>
   <ul class='nav'>
-    <li class='selected'>
+    <li>
       <a class='nav-home' <?php if ( is_front_page() ) { ?> href='home' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>' <?php } ?>>
         Home
       </a>
@@ -153,13 +153,13 @@
       <li><a href="#"><?php echo 'Welcome, ' . $current_user->display_name;?></a>
         <ul class="login-dropdown">
           <li>
-            <a class='login-dropdown-button' href='<?php echo wp_logout_url(); ?>'>
-              Log Out
+            <a class='login-dropdown-button' href='<?php echo site_url(); ?>/profile'>
+              My Profile
             </a>
           </li>
           <li>
-            <a class='login-dropdown-button' href='<?php echo site_url(); ?>/profile'>
-              My Profile
+            <a class='login-dropdown-button' href='<?php echo wp_logout_url(); ?>'>
+              Log Out
             </a>
           </li>
         </ul>

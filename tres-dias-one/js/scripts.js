@@ -12,7 +12,6 @@ $(document).ready(function(){
   $('.login-nav').click(function(event){
     $('.login-drop-down').toggleClass('hidden');
     $('.login-drop-down').toggleClass('displayed');
-    $('.login-nav li').first().toggleClass('selected');
   });
 
   //functions for faux pages
