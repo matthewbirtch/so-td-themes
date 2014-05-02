@@ -190,6 +190,7 @@ input#first_name, input#last_name {
   color: rgba(255, 255, 255, 0.6);
   font-weight: bold; }
   .nav-button:hover, .nav-list-item a:hover, ul.nav li a:hover, .menu-members-nav-container ul li a:hover, ul.login-nav li a:hover, .big-nav li a:hover {
+    text-decoration: none;
     color: white;
     background-color: rgba(0, 144, 219, 0.9); }
 
@@ -272,6 +273,8 @@ ul.login-nav {
     ul.login-nav li a {
       padding-left: 25px;
       background: url(images/login-arrow.png) no-repeat 15px center; }
+    ul.login-nav li ul {
+      display: none; }
 
 .big-nav li {
   border: none;
@@ -288,7 +291,8 @@ ul.login-nav {
     color: white; }
     .big-nav li a:hover {
       background: inherit;
-      color: rgba(255, 255, 255, 0.8); }
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none; }
 
 #logo {
   width: 146px;
@@ -371,8 +375,9 @@ ul.login-nav {
   border: solid 1px white; }
 
 .page-template-page-members-php .content-container, .page-template-page-weekends-php .content-container, .blog .content-container, .single .content-container {
-  margin-left: 25%;
   width: 70%; }
+  .page-template-page-members-php .content-container.logged-in, .page-template-page-weekends-php .content-container.logged-in, .blog .content-container.logged-in, .single .content-container.logged-in {
+    margin-left: 25%; }
 
 .content-container {
   position: relative;

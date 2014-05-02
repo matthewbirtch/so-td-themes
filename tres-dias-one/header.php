@@ -146,11 +146,23 @@
       </li>
   </ul>
   <ul class='login-nav'>
-    <?php if ( is_user_logged_in()) { ?>
-      <li>
-        <a class='login-dropdown-button' href='<?php echo wp_logout_url(); ?>'>
-          Log Out
-        </a>
+    <?php if ( is_user_logged_in()) { 
+      global $current_user;
+      get_currentuserinfo();
+    ?> 
+      <li><a href="#"><?php echo 'Welcome, ' . $current_user->display_name;?></a>
+        <ul class="login-dropdown">
+          <li>
+            <a class='login-dropdown-button' href='<?php echo wp_logout_url(); ?>'>
+              Log Out
+            </a>
+          </li>
+          <li>
+            <a class='login-dropdown-button' href='<?php echo site_url(); ?>/profile'>
+              My Profile
+            </a>
+          </li>
+        </ul>
       </li>
     <?php } else { ?>
       <li>

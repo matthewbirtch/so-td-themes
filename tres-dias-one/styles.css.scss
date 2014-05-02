@@ -223,6 +223,7 @@ input#first_name, input#last_name {
 	color: transparentize($main-font-color,.4);
 	font-weight: bold;
 	&:hover {
+		text-decoration: none;
 		color: $main-font-color;
 		background-color: transparentize($electric-blue,.1);
 	}
@@ -334,6 +335,9 @@ ul.login-nav {
 			padding-left: 25px;
 			background: url(images/login-arrow.png) no-repeat 15px center;
 		}
+		ul {
+			display:none;
+		}
 	}
 }
 .big-nav {
@@ -354,6 +358,7 @@ ul.login-nav {
 			&:hover {
 				background:inherit;
 				color: transparentize($main-font-color,.2);
+				text-decoration: none;
 			}
 
 		}
@@ -466,7 +471,9 @@ ul.login-nav {
 }
 
 .page-template-page-members-php .content-container, .page-template-page-weekends-php .content-container, .blog .content-container, .single .content-container {
-	margin-left: 25%;
+	&.logged-in {
+		margin-left: 25%;	
+	}
 	width: 70%;
 }
 
