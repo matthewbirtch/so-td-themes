@@ -45,7 +45,7 @@ h1 {
   font-weight: 100;
   margin-bottom: 1em;
   margin-top: 0;
-  letter-spacing: -.07em; }
+  letter-spacing: -.04em; }
 
 h2 {
   font-size: 48px;
@@ -60,7 +60,8 @@ h3 {
   font-size: 24px;
   font-weight: 600;
   color: inherit;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  margin-top: 1.5em; }
 
 h4 {
   font-size: 18px;
@@ -91,72 +92,83 @@ form {
   text-align: left; }
   form ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5); }
-  form input {
-    font-family: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: white;
-    border: solid 1px #dcdcdc;
-    background: none;
-    padding: 4px;
-    margin-bottom: 5px;
-    font-size: 18px;
-    font-weight: 300; }
-    form input:focus {
-      border: solid 1px #0090db;
-      color: #0090db;
-      outline: none; }
-  form .button, form .button_div input {
-    margin-top: 6px;
-    cursor: pointer; }
-  form legend {
-    text-align: center;
-    margin-bottom: 24px;
-    color: rgba(255, 255, 255, 0.5); }
-  form label {
-    float: left;
-    width: 30%;
-    font-size: 14px;
-    text-align: left;
-    padding: 10px;
-    margin-bottom: 10px; }
-  form .div_text, form .div_select {
-    float: right;
-    width: 70%;
-    margin-bottom: 10px; }
-    form .div_text input, form .div_select input {
-      width: 100%; }
-  form .button_div {
-    margin-top: 24px;
-    float: left;
+
+input {
+  font-family: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  border: solid 1px #dcdcdc;
+  background: none;
+  padding: 4px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 300; }
+  input:focus {
+    border: solid 1px #0090db;
+    color: #0090db;
+    outline: none; }
+
+.button, .button_div input {
+  margin-top: 6px;
+  cursor: pointer; }
+
+legend {
+  text-align: center;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.5); }
+
+label {
+  float: left;
+  width: 30%;
+  font-size: 14px;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+.div_text, .div_select {
+  float: right;
+  width: 70%;
+  margin-bottom: 10px; }
+  .div_text input, .div_select input {
     width: 100%; }
-    form .button_div input {
-      width: 50%; }
-  form .req-text {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.5);
-    display: none; }
-  form select {
-    -webkit-appearance: none;
-    background: none;
-    border: solid 1px white;
-    border-radius: 0;
-    font-size: 18px;
-    color: white;
-    font-family: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    padding: 4px;
-    margin: 0;
-    padding-right: 25px;
-    background: url(images/login-arrow.png) no-repeat 97% center; }
-    form select:focus {
-      border: solid 1px #0090db;
-      color: #0090db;
-      outline: none; }
-  form input[type="reset"] {
-    display: none; }
-  form input.username {
-    width: 70%; }
-  form input#first_name, form input#last_name {
+
+.button_div {
+  margin-top: 24px;
+  float: left;
+  width: 100%; }
+  .button_div input {
     width: 50%; }
+
+.req-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  display: none; }
+
+select {
+  -webkit-appearance: none;
+  background: none;
+  border: solid 1px white;
+  border-radius: 0;
+  font-size: 18px;
+  color: white;
+  font-family: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  padding: 4px;
+  margin: 0;
+  padding-right: 25px;
+  background: url(images/login-arrow.png) no-repeat 97% center; }
+  select:focus {
+    border: solid 1px #0090db;
+    color: #0090db;
+    outline: none; }
+
+input[type="reset"] {
+  display: none; }
+
+input.username {
+  width: 70%; }
+
+input#first_name, input#last_name {
+  width: 50%; }
 
 #nav-bar {
   width: 100%;
@@ -164,23 +176,24 @@ form {
   position: fixed;
   font-size: 14px;
   height: 54px;
-  top: 0; }
+  top: 0;
+  z-index: 997; }
 
 .admin-bar #nav-bar {
   top: 32px; }
 
-.nav-button, .nav-list-item a, ul.nav li a, .menu-members-nav-container ul li a, ul.login-nav li a, ul.big-nav li a {
+.nav-button, .nav-list-item a, ul.nav li a, .menu-members-nav-container ul li a, ul.login-nav li a, .big-nav li a {
   padding: 0 20px;
   height: 100%;
   display: table-cell;
   vertical-align: middle;
   color: rgba(255, 255, 255, 0.6);
   font-weight: bold; }
-  .nav-button:hover, .nav-list-item a:hover, ul.nav li a:hover, .menu-members-nav-container ul li a:hover, ul.login-nav li a:hover, ul.big-nav li a:hover {
+  .nav-button:hover, .nav-list-item a:hover, ul.nav li a:hover, .menu-members-nav-container ul li a:hover, ul.login-nav li a:hover, .big-nav li a:hover {
     color: white;
     background-color: rgba(0, 144, 219, 0.9); }
 
-.nav-list-item, ul.nav li, .menu-members-nav-container ul li, ul.login-nav li, ul.big-nav li {
+.nav-list-item, ul.nav li, .menu-members-nav-container ul li, ul.login-nav li, .big-nav li {
   border-left: solid 1px rgba(255, 255, 255, 0.15);
   height: 100%;
   float: left;
@@ -189,14 +202,14 @@ form {
   -webkit-transition: border-bottom .3s ease-in-out;
   -moz-transition: border-bottom .3s ease-in-out;
   -ms-transition: border-bottom .3s ease-in-out; }
-  .nav-list-item:last-child, ul.nav li:last-child, .menu-members-nav-container ul li:last-child, ul.login-nav li:last-child, ul.big-nav li:last-child {
+  .nav-list-item:last-child, ul.nav li:last-child, .menu-members-nav-container ul li:last-child, ul.login-nav li:last-child, .big-nav li:last-child {
     border-right: solid 1px rgba(255, 255, 255, 0.15); }
-  .nav-list-item.selected, ul.nav li.selected, .menu-members-nav-container ul li.selected, ul.login-nav li.selected, ul.big-nav li.selected {
+  .nav-list-item.selected, ul.nav li.selected, .menu-members-nav-container ul li.selected, ul.login-nav li.selected, .big-nav li.selected {
     border-bottom: solid 4px #0090db;
     font-weight: bold; }
-    .nav-list-item.selected a, ul.nav li.selected a, .menu-members-nav-container ul li.selected a, ul.login-nav li.selected a, ul.big-nav li.selected a {
+    .nav-list-item.selected a, ul.nav li.selected a, .menu-members-nav-container ul li.selected a, ul.login-nav li.selected a, .big-nav li.selected a {
       color: #0090db; }
-      .nav-list-item.selected a:hover, ul.nav li.selected a:hover, .menu-members-nav-container ul li.selected a:hover, ul.login-nav li.selected a:hover, ul.big-nav li.selected a:hover {
+      .nav-list-item.selected a:hover, ul.nav li.selected a:hover, .menu-members-nav-container ul li.selected a:hover, ul.login-nav li.selected a:hover, .big-nav li.selected a:hover {
         color: white; }
 
 ul.nav {
@@ -206,25 +219,40 @@ ul.nav {
   position: relative;
   left: 20px; }
 
+#menu-weekends-nav {
+  position: absolute;
+  top: 20px;
+  right: 20px; }
+
 .menu-members-nav-container {
-  width: 100%;
-  background: #0090db;
+  width: 20%;
+  background: rgba(0, 144, 219, 0.9);
   position: fixed;
-  top: 54px;
-  font-size: 12px;
-  font-weight: 300;
-  height: 28px; }
+  top: 0px;
+  padding-top: 74px;
+  height: 100%;
+  z-index: 996; }
   .menu-members-nav-container ul {
-    height: 100%;
+    height: 40px;
     margin: auto;
     width: 100%;
-    position: relative;
-    left: 20px; }
-    .menu-members-nav-container ul li.current-menu-item a {
-      color: white; }
+    position: relative; }
+    .menu-members-nav-container ul li {
+      border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+      width: 100%; }
+      .menu-members-nav-container ul li a {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 18px;
+        font-weight: 200; }
+        .menu-members-nav-container ul li a:hover {
+          text-decoration: none; }
+      .menu-members-nav-container ul li.current-menu-item a, .menu-members-nav-container ul li.current-page-ancestor:last-child a {
+        color: white;
+        font-weight: 400;
+        background-color: rgba(0, 0, 0, 0.2); }
 
 .admin-bar .menu-members-nav-container {
-  top: 86px; }
+  padding-top: 106px; }
 
 ul.login-nav {
   height: 100%;
@@ -245,20 +273,20 @@ ul.login-nav {
       padding-left: 25px;
       background: url(images/login-arrow.png) no-repeat 15px center; }
 
-ul.big-nav li {
+.big-nav li {
   border: none;
   float: none;
   width: 100%;
   display: block; }
-  ul.big-nav li a {
+  .big-nav li a {
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
     padding: 6px;
     font-weight: 100;
     color: white; }
-    ul.big-nav li a:hover {
+    .big-nav li a:hover {
       background: inherit;
       color: rgba(255, 255, 255, 0.8); }
 
@@ -280,16 +308,19 @@ ul.big-nav li {
 .page-container-outer {
   display: table;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  padding: 5%;
+  position: relative;
+  top: 54px; }
 
 .page-container-inner {
   display: table-cell;
-  padding: 10% 0;
   vertical-align: middle; }
 
 .page-content {
   margin: auto;
-  max-width: 620px; }
+  max-width: 620px;
+  padding-top: 5%; }
 
 #page-about {
   background: rgba(0, 144, 219, 0.9); }
@@ -321,7 +352,7 @@ ul.big-nav li {
       .about-nav li a:hover {
         color: rgba(255, 255, 255, 0.4); }
 
-.button, form .button_div input {
+.button, .button_div input {
   font-size: 14px;
   border: solid 1px #0090db;
   padding: 6px 12px;
@@ -329,43 +360,52 @@ ul.big-nav li {
   text-transform: uppercase;
   color: #0090db;
   text-align: center; }
-  .button:hover, form .button_div input:hover {
+  .button:hover, .button_div input:hover {
     border-color: #0090db;
     background: #0090db;
     color: white;
     text-decoration: none; }
 
-#page-about .button, #page-about form .button_div input, form .button_div #page-about input {
+#page-about .button, #page-about .button_div input, .button_div #page-about input {
   color: white;
   border: solid 1px white; }
 
+.page-template-page-members-php .content-container, .page-template-page-weekends-php .content-container, .blog .content-container, .single .content-container {
+  margin-left: 25%;
+  width: 70%; }
+
 .content-container {
+  position: relative;
   margin: auto;
   width: 50%;
   background: rgba(0, 0, 0, 0.86);
   padding: 5%; }
   .content-container h1 {
     text-align: center; }
+  .content-container.weekends h1 {
+    margin-top: .5em; }
   .content-container.profile ul {
     list-style-type: none; }
   .content-container.welcome {
     text-align: center; }
     .content-container.welcome h1 {
       margin-bottom: .5em; }
-  .content-container.blog h2 {
-    margin-bottom: .2em; }
-  .content-container.blog .meta {
-    font-size: 14px;
-    margin-bottom: 2.5em;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.6); }
-  .content-container.blog .postmetadata {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.6); }
-  .content-container.blog #comments, .content-container.blog #respond {
-    margin: 28px 0;
-    padding: 28px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.3); }
+  .content-container.blog {
+    margin-bottom: 2%; }
+    .content-container.blog h2 {
+      margin-bottom: .2em; }
+    .content-container.blog .meta {
+      font-size: 14px;
+      margin-bottom: 2.5em;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6); }
+    .content-container.blog .postmetadata {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6); }
+    .content-container.blog #comments, .content-container.blog #respond {
+      margin: 28px 0;
+      padding: 28px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.3); }
 
 .menu-btn {
   display: none; }
@@ -387,7 +427,8 @@ ul.big-nav li {
   height: 100%;
   position: fixed;
   left: 0;
-  top: 0; }
+  top: 0;
+  overflow: auto; }
   .overlay.hiding {
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
@@ -407,12 +448,6 @@ ul.big-nav li {
     vertical-align: middle;
     position: relative; }
     .overlay .overlay-content-container .close {
-      -webkit-transform-origin: 50% 50%;
-      -moz-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-      -webkit-transition: -webkit-transform .1s ease-in-out;
-      -moz-transition: -moz-transform .1s ease-in-out;
-      -ms-transition: -ms-transform .1s ease-in-out;
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -434,12 +469,7 @@ ul.big-nav li {
       border-radius: 50%;
       border: solid 1px rgba(0, 144, 219, 0.7); }
       .overlay .overlay-content-container .close:hover, .overlay .overlay-content-container .close:focus {
-        color: white;
-        border-radius: 50%;
-        border: solid 1px rgba(255, 255, 255, 0.7);
-        -webkit-transform: rotate(135deg);
-        -moz-transform: rotate(135deg);
-        -ms-transform: rotate(135deg); }
+        color: white; }
 
 #login-overlay {
   -webkit-transform-origin: top right;
@@ -453,39 +483,55 @@ ul.big-nav li {
       float: none;
       padding: 4px 0;
       color: rgba(255, 255, 255, 0.5); }
-    #login-overlay .overlay-content-container .form-container input, #login-overlay .overlay-content-container .form-container .button, #login-overlay .overlay-content-container .form-container form .button_div input, form .button_div #login-overlay .overlay-content-container .form-container input {
+    #login-overlay .overlay-content-container .form-container input, #login-overlay .overlay-content-container .form-container .button, #login-overlay .overlay-content-container .form-container .button_div input, .button_div #login-overlay .overlay-content-container .form-container input {
       width: 100%; }
-      #login-overlay .overlay-content-container .form-container input:focus, #login-overlay .overlay-content-container .form-container .button:focus, #login-overlay .overlay-content-container .form-container form .button_div input:focus, form .button_div #login-overlay .overlay-content-container .form-container input:focus {
+      #login-overlay .overlay-content-container .form-container input:focus, #login-overlay .overlay-content-container .form-container .button:focus, #login-overlay .overlay-content-container .form-container .button_div input:focus, .button_div #login-overlay .overlay-content-container .form-container input:focus {
         border-color: white;
         color: white; }
-    #login-overlay .overlay-content-container .form-container .button:hover, #login-overlay .overlay-content-container .form-container form .button_div input:hover, form .button_div #login-overlay .overlay-content-container .form-container input:hover {
+    #login-overlay .overlay-content-container .form-container .button:hover, #login-overlay .overlay-content-container .form-container .button_div input:hover, .button_div #login-overlay .overlay-content-container .form-container input:hover {
       background-color: white;
       color: #0090db; }
 
 @media all and (max-width: 480px) {
+  .big-nav li a {
+    font-size: 24px; }
+
   .page-container-outer {
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 20%;
-    padding-bottom: 20%; }
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+    top: 54px; }
 
-  .login-overlay .overlay-content-container .form-container {
+  .admin-bar .page-container-outer {
+    top: 54px; }
+
+  #login-overlay .overlay-content-container .form-container {
     width: 90%; }
 
-  .content-container {
+  .content-container, .page-template-page-members-php .content-container, .page-template-page-weekends-php .content-container, .blog .content-container, .single .content-container {
+    margin-left: 0;
     width: 100%;
     padding: 8%; }
-    .content-container h1 {
+    .content-container h1, .page-template-page-members-php .content-container h1, .page-template-page-weekends-php .content-container h1, .blog .content-container h1, .single .content-container h1 {
       font-size: 48px; } }
 @media all and (max-width: 936px) and (min-width: 481px) {
   #login-overlay .overlay-content-container .form-container {
     width: 50%; }
 
-  .content-container {
-    width: 80%; } }
+  .content-container, .page-template-page-members-php .content-container, .page-template-page-weekends-php .content-container, .blog .content-container, .single .content-container {
+    width: 100%;
+    margin-left: auto; } }
 @media all and (max-width: 936px) {
   #logo {
     left: 60px; }
+
+  .menu-members-nav-container {
+    display: none; }
+
+  .page-template-page-members-php .content-container, .page-template-page-weekends-php .content-container {
+    margin: auto; }
 
   .mobile-menu {
     z-index: 998;
@@ -503,7 +549,7 @@ ul.big-nav li {
 
   #nav-bar {
     position: fixed;
-    z-index: 998; }
+    z-index: 997; }
 
   ul.nav {
     display: none; } }

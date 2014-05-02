@@ -52,32 +52,43 @@
         +
       </button>
       <ul class='big-nav'>
+        
         <li>
-          <a class='nav-home' href='home' rel='page'>
+          <a class='nav-home' <?php if ( is_front_page() ) { ?> href='home' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>' <?php } ?>>
             Home
           </a>
         </li>
-        <li>
-          <a class='nav-about' href='about' rel='page'>
+      </ul>
+      <?php 
+        if ( is_user_logged_in()) { 
+          wp_nav_menu( array( 'theme_location' => 'mobile-nav', 'container_class' => 'big-nav') ); 
+        } else {
+      ?>
+        <ul class="big-nav">
+          <li>
+          <a class='nav-about' <?php if ( is_front_page() ) { ?> href='about' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>#page-about' <?php } ?>>
             About
           </a>
         </li>
         <li>
-          <a class='nav-calendar' href='calendar' rel='page'>
+          <a class='nav-calendar' <?php if ( is_front_page() ) { ?> href='calendar' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>#page-calendar' <?php } ?>>
             Calendar
           </a>
         </li>
         <li>
-          <a class='nav-statement-of-faith' href='statement-of-faith' rel='page'>
+          <a class='nav-statement-of-faith' <?php if ( is_front_page() ) { ?> href='statement-of-faith' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>#page-statement-of-faith' <?php } ?>>
             Statement of Faith
           </a>
         </li>
         <li>
-          <a class='nav-members' href='<?php echo site_url(); ?>/members'>
-            Members Area
-          </a>
-        </li>
-      </ul>
+            <a class='nav-members' href='<?php echo site_url(); ?>/members'>
+             Members Area
+           </a>
+          </li>
+        </ul>
+      <?php 
+        }
+      ?>
     </div>
   </div>
   <div class='overlay hidden' id='login-overlay'>
@@ -98,3 +109,55 @@
       </form>
     </div>
   </div>
+  <div id='nav-bar'>
+  <div id='logo'>
+    <a href='home' rel='page'>
+      Southern Ontario Tres Dias
+    </a>
+  </div>
+  <a class='mobile-menu' href='menu' rel='overlay'>
+    <i class='icon-menu'></i>
+  </a>
+  <ul class='nav'>
+    <li class='selected'>
+      <a class='nav-home' <?php if ( is_front_page() ) { ?> href='home' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>' <?php } ?>>
+        Home
+      </a>
+    </li>
+    <li>
+      <a class='nav-about' <?php if ( is_front_page() ) { ?> href='about' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>#page-about' <?php } ?>>
+        About
+      </a>
+    </li>
+    <li>
+      <a class='nav-calendar' <?php if ( is_front_page() ) { ?> href='calendar' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>#page-calendar' <?php } ?>>
+        Calendar
+      </a>
+    </li>
+    <li>
+      <a class='nav-statement-of-faith' <?php if ( is_front_page() ) { ?> href='statement-of-faith' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>#page-statement-of-faith' <?php } ?>>
+        Statement of Faith
+      </a>
+    </li>
+    <li>
+        <a class='nav-members' href='<?php echo site_url(); ?>/members'>
+         Members
+        </a>
+      </li>
+  </ul>
+  <ul class='login-nav'>
+    <?php if ( is_user_logged_in()) { ?>
+      <li>
+        <a class='login-dropdown-button' href='<?php echo wp_logout_url(); ?>'>
+          Log Out
+        </a>
+      </li>
+    <?php } else { ?>
+      <li>
+        <a class='login-dropdown-button' href='login' rel='overlay'>
+          Log in
+        </a>
+      </li>
+    <?php } ?>
+  </ul>
+</div>

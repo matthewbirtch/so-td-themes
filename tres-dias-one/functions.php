@@ -75,10 +75,16 @@
     }
 
     //Initialize Menu Support
-    function register_my_menu() {
-      register_nav_menu('members-nav',__( 'Members Nav' ));
+    function register_my_menus() {
+      register_nav_menus(
+        array(
+          'members-nav' => __( 'Members Nav' ),
+          'mobile-nav' => __( 'Mobile Nav' ),
+          'weekends-nav' => __( 'Weekends Nav' )
+        )
+      );
     }
-    add_action( 'init', 'register_my_menu' );
+    add_action( 'init', 'register_my_menus' );
 
 
     add_filter( 'wpmem_register_heading', 'my_heading' );
