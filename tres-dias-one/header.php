@@ -111,7 +111,7 @@
   </div>
   <div id='nav-bar'>
   <div id='logo'>
-    <a href='home' rel='page'>
+    <a <?php if ( is_front_page() ) { ?> href='home' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>' <?php } ?>>
       Southern Ontario Tres Dias
     </a>
   </div>
