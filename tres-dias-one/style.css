@@ -246,7 +246,7 @@ ul.nav {
         font-weight: 200; }
         .menu-members-nav-container ul li a:hover {
           text-decoration: none; }
-      .menu-members-nav-container ul li.current-menu-item a, .menu-members-nav-container ul li.current-page-ancestor:last-child a {
+      .menu-members-nav-container ul li.current-menu-item a {
         color: white;
         font-weight: 400;
         background-color: rgba(0, 0, 0, 0.2); }

@@ -296,7 +296,7 @@ ul.nav{
 			border-bottom: solid 1px transparentize($main-font-color, .85);
 			width: 100%;
 			@extend .nav-list-item;
-			&.current-menu-item, &.current-page-ancestor:last-child {
+			&.current-menu-item {
 				a {
 					color:$main-font-color;
 					font-weight: 400;
