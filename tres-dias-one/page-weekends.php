@@ -18,7 +18,6 @@
   if ( is_user_logged_in()) { 
     dropdown_menu( array( 
       'theme_location' => 'weekends-nav',
-      'dropdown_title' => '-- Select a Weekend --'
     ));
   } 
 ?>
