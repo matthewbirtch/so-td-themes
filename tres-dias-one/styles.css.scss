@@ -89,6 +89,12 @@ h4 {
 p {
 	margin-bottom: 1.2em;
 	margin-top: 0;
+	&.intro {
+		font-family: "rooney-web", Georgia, serif;
+		font-weight: 300;
+		line-height: 1.5;
+		font-size: 1.4em;
+	}
 }
 
 ul {
@@ -107,9 +113,10 @@ a {
 	}
 }
 
-.wpmem_msg {
-		color: red;
-	}
+.clear {
+	clear:both;
+}
+
 form {
 	::-webkit-input-placeholder {
   	  color: transparentize($main-font-color, .5);
@@ -279,7 +286,7 @@ body.home .nav-home-li {
 	}
 	li {
 		@extend .nav-list-item;
-		&.current-menu-item {
+		&.current-menu-item, &.current-page-ancestor {
 			border-bottom: solid 4px $electric-blue;
 			a {
 				color: $main-font-color;
@@ -324,7 +331,7 @@ body.home .nav-home-li {
 			border-bottom: solid 1px transparentize($main-font-color, .85);
 			width: 100%;
 			@extend .nav-list-item;
-			&.current-menu-item {
+			&.current-menu-item{
 				a {
 					color:$main-font-color;
 					font-weight: 400;
@@ -456,15 +463,12 @@ ul.login-nav {
 }
 
 #page-about {
-	background: transparentize(#000000,.2);
 }
 
 #page-calendar {
-	background: transparentize(#000000,.2);
 }
 
 #page-statement-of-faith {
-	background: transparentize(#000000,.2);
 }
 
 
@@ -472,6 +476,7 @@ ul.login-nav {
 .event {
 	text-align: center;
 	margin-bottom: 1.5em;
+	list-style-type: none;
 	h3, p {
 		margin-bottom: 0;
 	}
@@ -513,15 +518,12 @@ ul.login-nav {
 	}
 }
 
-#page-about {
-	.button {
-		color:$main-font-color;
-		border:solid 1px $main-font-color;
-	}
-}
-
 .logged-in {
-	&.page-template-page-members-php, &.page-template-page-weekends-php, &.blog {
+	&.page-template-page-members-php, 
+	&.page-template-page-weekends-php, 
+	&.page-template-page-weekend-php, 
+	&.single-event,
+	&.blog {
 		.page-container-outer {
 			margin-left:20%;
 			width: 80%;
@@ -549,7 +551,7 @@ ul.login-nav {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	&.weekends {
+	&.weekends, &.weekend {
 		h1 {
 			margin-top: .5em;
 		}
@@ -687,14 +689,59 @@ ul.login-nav {
 	}
 }
 
+// SINGLE WEEKEND
+.weekend-theme {
+	padding-top: 1.5em;
+	border-top: 1px solid transparentize($main-font-color,.5);
+}
+h1.weekend-name, h1.event-name {
+	margin-bottom: 0;
+}
+h3.weekend-date, h3.event-date {
+	text-align: center;
+	margin-top:.3em;
+	margin-bottom: 0;
+}
+.weekend-theme {
+	.weekend-theme-graphic, .weekend-theme-info {
+		float:left;
+		width: 48%;
+		margin-right:2%;
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+	}
+	.weekend-theme-info{
+		h2, h3, h4, h5, p {
+			text-align: left;
+		}
+	}
+}
+
+// EVENTS
+.eo-event-meta {
+	li {
+		list-style-type: none;
+	}
+}
+.event-header {
+	margin-bottom: 1.5em;
+}
+
 // WP MEMBERS
 // Roster List
 #wpmem_ul_search {
+	margin-bottom: 1em;
 	padding: 3%;
 	border: solid 1px transparentize($main-font-color,.6);
 	fieldset {
 		margin: 0;
 		width: auto;
+	}
+	.button_div {
+		display:none;
 	}
 }
 
@@ -763,7 +810,11 @@ ul.login-nav {
 	}
 
 	.logged-in {
-		&.page-template-page-members-php, &.page-template-page-weekends-php, &.blog {
+		&.page-template-page-members-php,
+		&.page-template-page-weekends-php,
+		&.page-template-page-weekend-php,
+		&.single-event,
+		&.blog {
 			.page-container-outer {
 				margin: auto;
 				width: 100%;
@@ -778,7 +829,13 @@ ul.login-nav {
 			}
 		}
 	}
-	.content-container, .page-template-page-members-php .content-container, .page-template-page-weekends-php .content-container,  .blog .content-container, .single .content-container {
+	.content-container, 
+	.page-template-page-members-php .content-container,
+	.page-template-page-weekends-php .content-container,
+	.page-template-page-weekend2-php .content-container,
+	.single-event .content-container,
+	.blog .content-container, 
+	.single .content-container {
 		margin-left: 0;
 		width:100%;
 		padding: 8%;
@@ -823,12 +880,22 @@ ul.login-nav {
 			}
 		}
 	}
-	.content-container, .page-template-page-members-php .content-container, .page-template-page-weekends-php .content-container, .blog .content-container, .single .content-container {
+	.content-container, 
+	.page-template-page-members-php .content-container,
+	.page-template-page-weekends-php .content-container,
+	.single-event .content-container,
+	.page-template-page-weekend-php .content-container,
+	.blog .content-container,
+	.single .content-container {
 		width:100%;
 	}
 	
 	.logged-in {
-		&.page-template-page-members-php, &.page-template-page-weekends-php, &.blog {
+		&.page-template-page-members-php,
+		&.page-template-page-weekends-php,
+		&.page-template-page-weekend-php,
+		&.single-event,
+		&.blog {
 			.page-container-outer {
 				margin: auto;
 				width: 95%;
@@ -851,14 +918,22 @@ ul.login-nav {
 	}
 
 	.logged-in {
-		&.page-template-page-members-php, &.page-template-page-weekends-php, &.blog {
+		&.page-template-page-members-php,
+		&.page-template-page-weekends-php,
+		&.single-event,
+		&.page-template-page-weekend-php,
+		&.blog {
 			.page-container-outer {
 				margin: auto;
 			}
 		}
 	}
 
-	.page-template-page-members-php .content-container, .page-template-page-weekends-php .content-container {
+	.page-template-page-members-php .content-container, 
+	.page-template-page-weekends-php .content-container,
+	.single-event .content-container,
+	.page-template-page-weekend-php .content-container
+	 {
 		margin:auto;
 		
 	}
