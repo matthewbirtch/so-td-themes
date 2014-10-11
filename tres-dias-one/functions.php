@@ -80,7 +80,8 @@
         array(
           'members-nav' => __( 'Members Nav' ),
           'mobile-nav' => __( 'Mobile Nav' ),
-          'weekends-nav' => __( 'Weekends Nav' )
+          'weekends-nav' => __( 'Weekends Nav' ),
+          'main-nav' => __( 'Main Nav' )
         )
       );
     }
@@ -109,5 +110,9 @@
         }
     }
 
+    add_filter( 'wpmem_ul_style_path', 'my_ul_style_path' );
+    function my_ul_style_path( $path ) {
+        return false;
+    }
 
 ?>

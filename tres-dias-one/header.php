@@ -51,41 +51,12 @@
       <button class='close'>
         +
       </button>
-      <ul class='big-nav'>
-        
-        <li>
-          <a class='nav-home' <?php if ( is_front_page() ) { ?> href='home' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>' <?php } ?>>
-            Home
-          </a>
-        </li>
-      </ul>
+      <?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'container_class' => 'big-nav' ) ); ?>
       <?php 
         if ( is_user_logged_in()) { 
           wp_nav_menu( array( 'theme_location' => 'mobile-nav', 'container_class' => 'big-nav') ); 
         } else {
       ?>
-        <ul class="big-nav">
-          <li>
-          <a class='nav-about' <?php if ( is_front_page() ) { ?> href='about' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>#page-about' <?php } ?>>
-            About
-          </a>
-        </li>
-        <li>
-          <a class='nav-calendar' <?php if ( is_front_page() ) { ?> href='calendar' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>#page-calendar' <?php } ?>>
-            Calendar
-          </a>
-        </li>
-        <li>
-          <a class='nav-statement-of-faith' <?php if ( is_front_page() ) { ?> href='statement-of-faith' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>#page-statement-of-faith' <?php } ?>>
-            Statement of Faith
-          </a>
-        </li>
-        <li>
-            <a class='nav-members' href='<?php echo site_url(); ?>/members'>
-             Members Area
-           </a>
-          </li>
-        </ul>
       <?php 
         }
       ?>
@@ -118,33 +89,7 @@
   <a class='mobile-menu' href='menu' rel='overlay'>
     <i class='icon-menu'></i>
   </a>
-  <ul class='nav'>
-    <li>
-      <a class='nav-home' <?php if ( is_front_page() ) { ?> href='home' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>' <?php } ?>>
-        Home
-      </a>
-    </li>
-    <li>
-      <a class='nav-about' <?php if ( is_front_page() ) { ?> href='about' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>#page-about' <?php } ?>>
-        About
-      </a>
-    </li>
-    <li>
-      <a class='nav-calendar' <?php if ( is_front_page() ) { ?> href='calendar' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>#page-calendar' <?php } ?>>
-        Calendar
-      </a>
-    </li>
-    <li>
-      <a class='nav-statement-of-faith' <?php if ( is_front_page() ) { ?> href='statement-of-faith' rel='page' <?php } else { ?> href='<?php echo site_url(); ?>#page-statement-of-faith' <?php } ?>>
-        Statement of Faith
-      </a>
-    </li>
-    <li>
-        <a class='nav-members' href='<?php echo site_url(); ?>/members'>
-         Members
-        </a>
-      </li>
-  </ul>
+  <?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'container_class' => 'nav' ) ); ?>
   <ul class='login-nav'>
     <?php if ( is_user_logged_in()) { 
       global $current_user;
