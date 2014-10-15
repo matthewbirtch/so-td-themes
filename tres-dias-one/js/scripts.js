@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  
   //smooth scrolling for anchor links
   $("a[href^='#']").click(function(event) {
     event.preventDefault();
@@ -9,7 +9,7 @@ $(document).ready(function(){
     });
   });
 
-  $('.login-nav').click(function(event){
+  $('.login-nav').click(function(){
     $('.login-drop-down').toggleClass('hidden');
     $('.login-drop-down').toggleClass('displayed');
   });
